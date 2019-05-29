@@ -1,9 +1,11 @@
+# https://plugins.jetbrains.com/plugin/1800-database-navigator/versions
 from  zarr import MongoDBStore
 import pymongo
 import h5py
 import zarr
 import sys
 import zarr.storage
+
 from numcodecs import Zstd, Blosc
 compressor = Blosc(cname='zstd', clevel=3, shuffle=Blosc.BITSHUFFLE)
 
